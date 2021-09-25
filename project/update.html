@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<title>UPDATE</title>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.button {
+  border-radius: 4px;
+  background-color: #dddddd;
+  border: none;
+  color: #333333;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+</head>
+<body background="bg.jpg">
+<img src="logo.png"style="Margin-left:420px">
+
+<center>
+
+<form method="POST" action="plus100.php">
+<button class="button"><span>Increase Peripheral Price by 100</span></button>
+</form>
+<form method="POST" action="minus100.php">
+<button class="button"><span>Decrease Peripheral Price by 100</span></button>
+</form>
+</center>
+</body>
+</html>

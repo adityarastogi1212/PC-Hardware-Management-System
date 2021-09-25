@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>Insert Motherboard Page</title>
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    background-color:#dddddd;
+    color: #333333;
+    padding: 15px 90px;
+    margin-top: 30px;
+    margin-right: 20%;
+    margin-left: 33.3%;
+    border:solid;
+    width: 32%;
+    font-size: 12px;
+    border-radius: 8px;
+    text-align:center;
+}
+
+input[type=submit]:hover {
+    background-color: slategrey;
+    color: black;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+</style>
+</head>
+<body background="bg1.jpg"; style="font-family:arial, cursive, sans-serif">
+<div>
+		<center>
+			<img src="logo1.png">
+		</center>
+	</div>
+
+<h3>Insert into Motherboard</h3>
+
+<div>
+  <form method="POST" action="insertmotherboard.php">
+    <label for="mname">Motherboard Name</label>
+    <input type="text" id="mname" name="mname" placeholder="Motherboard Name">
+
+    <label for="slot">Slot</label>
+    <input type="text" id="slot" name="slot" placeholder="Slot">
+
+    <label for="rslot">RAM Slot</label>
+    <input type="text" id="rslot" name="rslot" placeholder="RAM Slot">
+
+    <label for="oc">Overclockable(Yes/No)?</label>
+    <input type="text" id="oc" name="oc" placeholder="Overclockable">
+
+    <label for="lname">Price</label>
+    <input type="text" id="price" name="price" placeholder="Price">
+
+  
+    <input style="text-align:center;font-size: 15px" type="submit" value="Submit">
+  </form>
+</div>
+</body>
+</html>
